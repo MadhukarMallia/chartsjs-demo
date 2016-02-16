@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1>'Allo, Here is the Charts Demo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Main Chart
+  </p>
+  <p><a class="btn btn-lg btn-success" ui-sref="home">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="col-lg-12 col-sm-12 ng-scope" id="pie-chart">
+  <div class="panel panel-default">
+    <div class="panel-heading">Pie Chart</div>
+    <div class="panel-body">
+      <div class="chart-container">
+        <canvas
+          id="pie"
+          class="chart chart-pie chart-xs ng-isolate-scope"
+          chart-data="main.data"
+          chart-labels="main.labels"
+          chart-click="main.clickPie">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>
